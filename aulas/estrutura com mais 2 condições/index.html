@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Aula 4</title>
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #000000;
+      text-align: center;
+      margin-top: 100px;
+      justify-content: center;
+    }
+
+    h1 {
+      color: #ff0000;
+    }
+
+    button {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      border: none;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Escolha uma opção</h1>
+
+  <button onclick="fazerPedido()"> Fazer pedido</button>
+  <button onclick="irRolê()"> Ir pro rolê</button>
+
+  <script>
+    //  Lanches 
+    function fazerPedido() {
+      let pedido = prompt("Boa tarde! Escolha entre: X-Bacon, X-Salada ou X-Burguer");
+
+      if (pedido === "X-Bacon") {
+        alert(`Excelente escolha! Seu ${pedido} ficará pronto em 20 minutos.`);
+      } 
+      else if (pedido === "X-Salada") {
+        alert(`Ótima escolha! Seu ${pedido} ficará pronto em 15 minutos.`);
+      } 
+      else if (pedido === "X-Burguer") {
+        alert(`A escolha perfeita! Seu ${pedido} ficará pronto em 10 minutos.`);
+      } 
+      else {
+        alert("Opção inválida. Tente novamente!");
+      }
+    }
+
+    // --- Rolê ---
+    function irRolê() {
+      let clima = "sol";
+      let dinheiro = prompt("Você tem dinheiro? (sim/não)");
+
+      if (clima === "sol" && dinheiro === "sim") {
+        alert("Partiu rolê!");
+      } else {
+        alert("Nem queria ir mesmo 😅");
+      }
+    }
+  </script>
+
+</body>
+</html>

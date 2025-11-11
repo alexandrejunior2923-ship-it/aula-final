@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Mortal Kairos</title>
+    <style>
+    body {
+background-color: #121212;
+color: #f5f5f5;
+font-family: Arial, sans-serif;
+text-align: center;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+h1 {color: #ff4444;}
+
+button {
+background-color: #ff4444;
+ color: white;
+padding: 12px 24px;
+ font-size: 18px;
+border-radius: 8px; }
+         </style>
+     </head>
+     <body>
+         <h1>Jogo Mortal Kairos</h1>
+         <button onclick="iniciarJogo()">Iniciar Jogo</button>
+         <p id="mensagem"></p>
+     
+         <script>
+             function iniciarJogo() {
+        let numero = Number (prompt("Vamos jogar um jogo"))
+
+        let numerosecreto=4
+
+        if(numero === numerosecreto){
+            alert("você acerto!")
+        }
+        else{
+            alert("você erro")
+        }
+             }
+         </script>
+     </body>
+     </html>
+     
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+</body>
+</html>
